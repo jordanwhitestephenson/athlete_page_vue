@@ -10,7 +10,7 @@
         <router-link to="/edit">Edit Athlete</router-link></b-nav-item
       >
     </b-nav>
-
+    
     <router-view />
   </div>
 </template>

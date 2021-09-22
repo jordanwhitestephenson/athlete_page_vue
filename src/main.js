@@ -6,6 +6,7 @@ import './firebase'
 import { firestorePlugin, rtdbPlugin } from 'vuefire'
 import EditAthlete from "./components/EditAthlete.vue";
 import AddAthlete from "./components/AddAthlete.vue";
+import Home from "./components/Home.vue";
 
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
@@ -24,6 +25,7 @@ Vue.use(VueRouter)
 
 export const router = new VueRouter({
   routes: [
+    { path: '/', component: Home, name:"home" },
     { path: '/add', component: AddAthlete, name:"add" },
     { path: '/edit', component: EditAthlete, name:"edit" },
   ]
